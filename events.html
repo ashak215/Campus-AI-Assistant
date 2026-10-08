@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events & Announcements | Campus AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a href="index.html" class="brand" aria-label="Campus AI home">
+          <span class="brand-icon">🎓</span>
+          <span class="brand-text">
+            <strong>Campus AI</strong>
+            <small>Your Intelligent College Assistant</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="assistant.html">AI Assistant</a>
+          <a href="predictor.html">ML Predictor</a>
+          <a href="events.html" class="active">Events</a>
+          <a href="campus.html">Campus</a>
+          <a href="settings.html">Settings</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero container reveal">
+        <div>
+          <span class="eyebrow accent">Events & Announcements</span>
+          <h1>Stay updated with campus activities</h1>
+        </div>
+      </section>
+
+      <section class="container events-toolbar reveal">
+        <div class="filter-group" aria-label="Event categories">
+          <button class="filter-chip active" data-category="all" type="button">All</button>
+          <button class="filter-chip" data-category="workshop" type="button">Workshops</button>
+          <button class="filter-chip" data-category="hackathon" type="button">Hackathons</button>
+          <button class="filter-chip" data-category="college-event" type="button">College Events</button>
+          <button class="filter-chip" data-category="exam" type="button">Exams</button>
+          <button class="filter-chip" data-category="announcement" type="button">Announcements</button>
+        </div>
+        <label class="search-box" aria-label="Search events">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input id="eventSearch" type="search" placeholder="Search events" />
+        </label>
+      </section>
+
+      <section class="container event-grid" id="eventGrid">
+        <article class="event-card reveal" data-category="workshop">
+          <span class="event-tag">Workshop</span>
+          <h3>AI &amp; Machine Learning Workshop</h3>
+          <ul>
+            <li><i class="fa-regular fa-calendar"></i> October 15, 2026</li>
+            <li><i class="fa-regular fa-clock"></i> 10:00 AM</li>
+            <li><i class="fa-solid fa-location-dot"></i> Seminar Hall</li>
+          </ul>
+        </article>
+
+        <article class="event-card reveal" data-category="hackathon">
+          <span class="event-tag">Hackathon</span>
+          <h3>Campus Hackathon 2026</h3>
+          <ul>
+            <li><i class="fa-regular fa-calendar"></i> October 20, 2026</li>
+            <li><i class="fa-regular fa-clock"></i> 9:00 AM</li>
+            <li><i class="fa-solid fa-location-dot"></i> Innovation Lab</li>
+          </ul>
+        </article>
+
+        <article class="event-card reveal" data-category="exam">
+          <span class="event-tag">Exam</span>
+          <h3>Semester Examination</h3>
+          <ul>
+            <li><i class="fa-regular fa-calendar"></i> November 10, 2026</li>
+            <li><i class="fa-regular fa-clock"></i> 9:30 AM</li>
+            <li><i class="fa-solid fa-location-dot"></i> Main Block</li>
+          </ul>
+        </article>
+
+        <article class="event-card reveal" data-category="workshop">
+          <span class="event-tag">Workshop</span>
+          <h3>Career Development Workshop</h3>
+          <ul>
+            <li><i class="fa-regular fa-calendar"></i> November 18, 2026</li>
+            <li><i class="fa-regular fa-clock"></i> 2:00 PM</li>
+            <li><i class="fa-solid fa-location-dot"></i> Auditorium</li>
+          </ul>
+        </article>
+
+        <article class="event-card reveal" data-category="announcement">
+          <span class="event-tag">Announcement</span>
+          <h3>Admissions Open for Advanced AI Program</h3>
+          <ul>
+            <li><i class="fa-regular fa-calendar"></i> December 2, 2026</li>
+            <li><i class="fa-regular fa-clock"></i> 11:00 AM</li>
+            <li><i class="fa-solid fa-location-dot"></i> Admin Office</li>
+          </ul>
+        </article>
+
+        <article class="event-card reveal" data-category="college-event">
+          <span class="event-tag">College Event</span>
+          <h3>Annual Tech Fest 2026</h3>
+          <ul>
+            <li><i class="fa-regular fa-calendar"></i> December 14, 2026</li>
+            <li><i class="fa-regular fa-clock"></i> 9:00 AM</li>
+            <li><i class="fa-solid fa-location-dot"></i> Open Air Stage</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span>LEARN • CONNECT • NAVIGATE • IMPROVE</span>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/events.js"></script>
+  </body>
+</html>

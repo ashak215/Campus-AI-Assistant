@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ML Predictor | Campus AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a href="index.html" class="brand" aria-label="Campus AI home">
+          <span class="brand-icon">🎓</span>
+          <span class="brand-text">
+            <strong>Campus AI</strong>
+            <small>Your Intelligent College Assistant</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="assistant.html">AI Assistant</a>
+          <a href="predictor.html" class="active">ML Predictor</a>
+          <a href="events.html">Events</a>
+          <a href="campus.html">Campus</a>
+          <a href="settings.html">Settings</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero container reveal">
+        <div>
+          <span class="eyebrow accent">ML Analytics Dashboard</span>
+          <h1>Overall Student Population Performance Overview</h1>
+        </div>
+        <span class="demo-badge">Demo Data</span>
+      </section>
+
+      <section class="container dashboard-section">
+        <div class="stats-grid predictor-stats">
+          <article class="stat-card metric-card reveal">
+            <span class="label">Total Students</span>
+            <strong>1250</strong>
+          </article>
+          <article class="stat-card metric-card reveal">
+            <span class="label">Average Performance</span>
+            <strong>78.4%</strong>
+          </article>
+          <article class="stat-card metric-card reveal">
+            <span class="label">Average Attendance</span>
+            <strong>82.6%</strong>
+          </article>
+          <article class="stat-card metric-card reveal">
+            <span class="label">Average Marks</span>
+            <strong>76.8%</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="container chart-grid">
+        <article class="chart-card reveal">
+          <div class="chart-header">
+            <h2>Overall Academic Performance Trend</h2>
+          </div>
+          <canvas id="performanceChart" aria-label="Overall performance line chart"></canvas>
+        </article>
+
+        <article class="chart-card reveal">
+          <div class="chart-header">
+            <h2>Year-wise Risk Distribution</h2>
+          </div>
+          <canvas id="riskChart" aria-label="Year-wise risk distribution chart"></canvas>
+        </article>
+      </section>
+
+      <section class="container prediction-row">
+        <article class="prediction-card reveal">
+          <span class="pill">ML Prediction</span>
+          <h2>Predicted 2027 Performance</h2>
+          <div class="prediction-score">86%</div>
+          <div class="prediction-comparison">
+            <span>Current Performance → 83%</span>
+            <span>Predicted Performance → 86%</span>
+          </div>
+        </article>
+
+        <article class="prediction-card reveal">
+          <span class="pill">Future Risk Trend</span>
+          <h2>High-risk percentage is decreasing</h2>
+          <canvas id="riskTrendChart" aria-label="Future risk trend chart"></canvas>
+        </article>
+      </section>
+
+      <section class="container insights-section">
+        <div class="section-heading reveal">
+          <span class="eyebrow accent">AI Insights</span>
+          <h2>Smart recommendations from ML analysis</h2>
+        </div>
+
+        <div class="insight-grid">
+          <article class="insight-card reveal">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            <p>Overall academic performance is improving.</p>
+          </article>
+          <article class="insight-card reveal">
+            <i class="fa-solid fa-user-check"></i>
+            <p>Average attendance is showing a positive trend.</p>
+          </article>
+          <article class="insight-card reveal">
+            <i class="fa-solid fa-shield-heart"></i>
+            <p>High-risk student percentage is decreasing.</p>
+          </article>
+          <article class="insight-card reveal">
+            <i class="fa-solid fa-lightbulb"></i>
+            <p>The predicted academic performance for the next year is positive.</p>
+          </article>
+          <article class="insight-card reveal">
+            <i class="fa-solid fa-person-circle-check"></i>
+            <p>Additional academic support should be provided to students in high-risk groups.</p>
+          </article>
+          <article class="insight-card reveal">
+            <span class="insight-badge">ML Analysis</span>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span>LEARN • CONNECT • NAVIGATE • IMPROVE</span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/predictor.js"></script>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campus Information | Campus AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a href="index.html" class="brand" aria-label="Campus AI home">
+          <span class="brand-icon">🎓</span>
+          <span class="brand-text">
+            <strong>Campus AI</strong>
+            <small>Your Intelligent College Assistant</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="assistant.html">AI Assistant</a>
+          <a href="predictor.html">ML Predictor</a>
+          <a href="events.html">Events</a>
+          <a href="campus.html" class="active">Campus</a>
+          <a href="settings.html">Settings</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero container reveal">
+        <div>
+          <span class="eyebrow accent">Campus Information</span>
+          <h1>Explore our academic and campus ecosystem</h1>
+          <p class="page-intro">Discover the people, places and resources that make campus life thrive.</p>
+        </div>
+      </section>
+
+      <section class="container info-grid">
+        <article class="info-card reveal">
+          <div class="campus-card-image image-frame">
+            <img src="assets/images/departments.jpg" alt="Academic classroom and university learning environment" loading="lazy" data-image-fallback />
+            <div class="image-fallback" aria-hidden="true"><i class="fa-solid fa-school"></i><span>Departments</span></div>
+          </div>
+          <div class="campus-card-content">
+            <div class="campus-card-heading"><span class="icon-wrap purple"><i class="fa-solid fa-school"></i></span><h2>Departments</h2></div>
+            <p>Academic departments offering specialized learning paths and research-focused curriculum.</p>
+            <button class="inline-btn" data-campus-detail="departments" type="button">View Details <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </article>
+
+        <article class="info-card reveal">
+          <div class="campus-card-image image-frame">
+            <img src="assets/images/faculty.jpg" alt="Faculty member ready to teach and guide students" loading="lazy" data-image-fallback />
+            <div class="image-fallback" aria-hidden="true"><i class="fa-solid fa-user-tie"></i><span>Faculty</span></div>
+          </div>
+          <div class="campus-card-content">
+            <div class="campus-card-heading"><span class="icon-wrap blue"><i class="fa-solid fa-user-tie"></i></span><h2>Faculty</h2></div>
+            <p>Dedicated mentors helping students grow academically and professionally.</p>
+            <button class="inline-btn" data-campus-detail="faculty" type="button">View Details <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </article>
+
+        <article class="info-card reveal">
+          <div class="campus-card-image image-frame">
+            <img src="assets/images/library.jpg" alt="Bright modern library with rows of bookshelves" loading="lazy" data-image-fallback />
+            <div class="image-fallback" aria-hidden="true"><i class="fa-solid fa-book-open"></i><span>Library</span></div>
+          </div>
+          <div class="campus-card-content">
+            <div class="campus-card-heading"><span class="icon-wrap gold"><i class="fa-solid fa-book"></i></span><h2>Library</h2></div>
+            <p>Access books, digital resources, journals and quiet study spaces.</p>
+            <button class="inline-btn" data-campus-detail="library" type="button">View Details <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </article>
+
+        <article class="info-card reveal">
+          <div class="campus-card-image image-frame">
+            <img src="assets/images/laboratories.jpg" alt="Computer hardware and technology used in modern laboratories" loading="lazy" data-image-fallback />
+            <div class="image-fallback" aria-hidden="true"><i class="fa-solid fa-microchip"></i><span>Laboratories</span></div>
+          </div>
+          <div class="campus-card-content">
+            <div class="campus-card-heading"><span class="icon-wrap green"><i class="fa-solid fa-microchip"></i></span><h2>Laboratories</h2></div>
+            <p>Modern computer, data science and engineering laboratories for practical learning.</p>
+            <button class="inline-btn" data-campus-detail="laboratories" type="button">View Details <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </article>
+
+        <article class="info-card reveal">
+          <div class="campus-card-image image-frame">
+            <img src="assets/images/auditorium.jpg" alt="Large event venue prepared for a college gathering" loading="lazy" data-image-fallback />
+            <div class="image-fallback" aria-hidden="true"><i class="fa-solid fa-landmark"></i><span>Auditorium</span></div>
+          </div>
+          <div class="campus-card-content">
+            <div class="campus-card-heading"><span class="icon-wrap purple"><i class="fa-solid fa-landmark"></i></span><h2>Auditorium</h2></div>
+            <p>Platform for conferences, cultural programs, seminars, and major campus events.</p>
+            <button class="inline-btn" data-campus-detail="auditorium" type="button">View Details <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </article>
+
+        <article class="info-card reveal">
+          <div class="campus-card-image image-frame">
+            <img src="assets/images/clubs.jpg" alt="Students connecting and participating in campus club activities" loading="lazy" data-image-fallback />
+            <div class="image-fallback" aria-hidden="true"><i class="fa-solid fa-people-group"></i><span>Clubs</span></div>
+          </div>
+          <div class="campus-card-content">
+            <div class="campus-card-heading"><span class="icon-wrap blue"><i class="fa-solid fa-people-group"></i></span><h2>Clubs</h2></div>
+            <p>Engage in student communities related to innovation, culture, leadership, and technology.</p>
+            <button class="inline-btn" data-campus-detail="clubs" type="button">View Details <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </article>
+
+        <article class="info-card reveal">
+          <div class="campus-card-image image-frame">
+            <img src="assets/images/sports.jpg" alt="Outdoor sports area for student recreation and activities" loading="lazy" data-image-fallback />
+            <div class="image-fallback" aria-hidden="true"><i class="fa-solid fa-football"></i><span>Sports</span></div>
+          </div>
+          <div class="campus-card-content">
+            <div class="campus-card-heading"><span class="icon-wrap gold"><i class="fa-solid fa-football"></i></span><h2>Sports</h2></div>
+            <p>Fitness, athletics, and sports programs that promote health and teamwork.</p>
+            <button class="inline-btn" data-campus-detail="sports" type="button">View Details <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </article>
+
+        <article class="info-card reveal">
+          <div class="campus-card-image image-frame">
+            <img src="assets/images/facilities.jpg" alt="Contemporary shared campus facility and student workspace" loading="lazy" data-image-fallback />
+            <div class="image-fallback" aria-hidden="true"><i class="fa-solid fa-building"></i><span>Campus Facilities</span></div>
+          </div>
+          <div class="campus-card-content">
+            <div class="campus-card-heading"><span class="icon-wrap green"><i class="fa-solid fa-building"></i></span><h2>Campus Facilities</h2></div>
+            <p>Comfortable infrastructure and student services designed for academic success.</p>
+            <button class="inline-btn" data-campus-detail="facilities" type="button">View Details <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <div class="detail-modal" id="campusDetailModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="campusDetailTitle">
+      <div class="modal-content campus-modal-content">
+        <button class="modal-close" type="button" aria-label="Close details">×</button>
+        <div class="modal-image image-frame">
+          <img id="campusDetailImage" src="" alt="" data-image-fallback />
+          <div class="image-fallback" aria-hidden="true"><i class="fa-solid fa-building-columns"></i><span>Campus Image</span></div>
+          <span class="modal-image-shade"></span>
+        </div>
+        <div class="campus-modal-body">
+          <span class="eyebrow accent">Explore Campus</span>
+          <h2 id="campusDetailTitle"></h2>
+          <p id="campusDetailText"></p>
+          <div class="campus-modal-lists">
+            <section>
+              <h3>Key Information</h3>
+              <ul id="campusDetailInformation"></ul>
+            </section>
+            <section>
+              <h3>Related Facilities</h3>
+              <ul id="campusDetailFacilities"></ul>
+            </section>
+          </div>
+          <button class="btn btn-secondary modal-back" type="button"><i class="fa-solid fa-arrow-left"></i> Back to Campus</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span>LEARN • CONNECT • NAVIGATE • IMPROVE</span>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Assistant | Campus AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a href="index.html" class="brand" aria-label="Campus AI home">
+          <span class="brand-icon">🎓</span>
+          <span class="brand-text">
+            <strong>Campus AI</strong>
+            <small>Your Intelligent College Assistant</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="assistant.html" class="active">AI Assistant</a>
+          <a href="predictor.html">ML Predictor</a>
+          <a href="events.html">Events</a>
+          <a href="campus.html">Campus</a>
+          <a href="settings.html">Settings</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main assistant-page">
+      <section class="container assistant-intro reveal">
+        <div>
+          <span class="eyebrow accent">Your campus, made simple</span>
+          <h1>AI Campus Assistant</h1>
+          <p>Your intelligent guide to everything on campus.</p>
+        </div>
+        <div class="assistant-availability"><span class="status-dot"></span> Here for you, anytime</div>
+      </section>
+
+      <section class="assistant-workspace container">
+        <aside class="assistant-visual-card reveal">
+          <div class="assistant-visual-image image-frame">
+            <img src="assets/images/hero-ai.jpg" alt="Friendly AI robot assistant ready to help students" data-image-fallback />
+            <div class="image-fallback" aria-hidden="true"><i class="fa-solid fa-robot"></i><span>Your AI campus guide</span></div>
+            <div class="assistant-visual-shade"></div>
+            <div class="ai-orbit orbit-one"></div>
+            <div class="ai-orbit orbit-two"></div>
+            <div class="visual-label">
+              <span class="visual-label-icon"><i class="fa-solid fa-sparkles"></i></span>
+              <span><strong>Meet Campus AI</strong><small>One helpful guide for your campus day</small></span>
+            </div>
+          </div>
+          <div class="visual-campus-note">
+            <span class="campus-note-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <span><strong>Made for campus life</strong><small>Find the answers and places you need</small></span>
+          </div>
+          <div class="assistant-trust-row">
+            <span><i class="fa-solid fa-bolt"></i> Instant answers</span>
+            <span><i class="fa-solid fa-compass"></i> Campus guidance</span>
+          </div>
+        </aside>
+
+        <section class="assistant-panel chat-panel" aria-label="Campus AI chat">
+          <div class="chat-header">
+            <div class="chat-avatar"><i class="fa-solid fa-sparkles"></i></div>
+            <div class="chat-title">
+              <h2>Campus AI Assistant</h2>
+              <span><span class="status-dot"></span> Online now</span>
+            </div>
+            <span class="chat-more" aria-hidden="true"><i class="fa-solid fa-ellipsis"></i></span>
+          </div>
+
+          <div class="chat-window" id="chatWindow" aria-live="polite">
+            <div class="chat-day-divider"><span>Today</span></div>
+            <div class="message ai">
+              <div class="message-avatar"><i class="fa-solid fa-sparkles"></i></div>
+              <div class="message-content">
+                <span class="message-author">Campus AI</span>
+                <div class="bubble">Hi! 👋 How can I help you today?</div>
+                <time>Just now</time>
+              </div>
+            </div>
+            <div class="message user">
+              <div class="message-content">
+                <span class="message-author">You</span>
+                <div class="bubble">Where is the college library?</div>
+                <time>10:42 AM</time>
+              </div>
+            </div>
+            <div class="message ai">
+              <div class="message-avatar"><i class="fa-solid fa-sparkles"></i></div>
+              <div class="message-content">
+                <span class="message-author">Campus AI</span>
+                <div class="bubble">The library is located in Block A, Ground Floor. It is open from 8:00 AM to 7:00 PM.</div>
+                <time>10:42 AM</time>
+              </div>
+            </div>
+            <div class="message user">
+              <div class="message-content">
+                <span class="message-author">You</span>
+                <div class="bubble">When is the next exam?</div>
+                <time>10:43 AM</time>
+              </div>
+            </div>
+            <div class="message ai">
+              <div class="message-avatar"><i class="fa-solid fa-sparkles"></i></div>
+              <div class="message-content">
+                <span class="message-author">Campus AI</span>
+                <div class="bubble">Your next examination is scheduled for Monday.</div>
+                <time>10:43 AM</time>
+              </div>
+            </div>
+          </div>
+
+          <form id="chatForm" class="chat-form">
+            <input
+              id="chatInput"
+              type="text"
+              placeholder="Ask me anything about campus..."
+              aria-label="Type your question"
+              autocomplete="off"
+            />
+            <button type="submit" class="chat-send" aria-label="Send message"><i class="fa-solid fa-arrow-up"></i></button>
+          </form>
+          <p class="chat-disclaimer"><i class="fa-solid fa-lock"></i> Campus answers at your fingertips</p>
+        </section>
+      </section>
+
+      <section class="container quick-questions assistant-quick reveal">
+        <div class="assistant-section-heading">
+          <div><span class="eyebrow accent">Need a hand?</span><h2>Quick questions</h2></div>
+          <span class="assistant-section-note">Choose a topic to get started</span>
+        </div>
+        <div class="quick-list">
+          <button class="quick-question" data-question="Where is the college library?">📚 <span>Library</span></button>
+          <button class="quick-question" data-question="When is the next exam?">📝 <span>Exams</span></button>
+          <button class="quick-question" data-question="Who are the faculty?">👩‍🏫 <span>Faculty</span></button>
+          <button class="quick-question" data-question="What is the timetable for this semester?">🕐 <span>Timetable</span></button>
+          <button class="quick-question" data-question="What departments are available?">🏢 <span>Departments</span></button>
+          <button class="quick-question" data-question="What events are happening on campus?">🎉 <span>Events</span></button>
+          <button class="quick-question" data-question="What are the fee details?">💰 <span>Fees</span></button>
+          <button class="quick-question" data-question="What campus facilities are available?">🏫 <span>Campus Facilities</span></button>
+        </div>
+      </section>
+
+      <section class="container assistant-resources reveal">
+        <div class="assistant-section-heading">
+          <div><span class="eyebrow accent">Explore campus</span><h2>Helpful information, all in one place</h2></div>
+          <a class="resource-view-all" href="campus.html">View campus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="resource-grid">
+          <a class="resource-card" href="campus.html">
+            <span class="resource-icon lavender"><i class="fa-regular fa-circle-question"></i></span>
+            <span class="resource-copy"><strong>College FAQ</strong><small>Answers to common questions</small></span>
+            <i class="fa-solid fa-arrow-up-right-from-square resource-arrow"></i>
+          </a>
+          <a class="resource-card" href="campus.html">
+            <span class="resource-icon blue"><i class="fa-solid fa-chalkboard-user"></i></span>
+            <span class="resource-copy"><strong>Faculty Information</strong><small>Meet your academic mentors</small></span>
+            <i class="fa-solid fa-arrow-up-right-from-square resource-arrow"></i>
+          </a>
+          <a class="resource-card" href="events.html">
+            <span class="resource-icon peach"><i class="fa-regular fa-calendar-check"></i></span>
+            <span class="resource-copy"><strong>Exam Information</strong><small>Dates, updates and notices</small></span>
+            <i class="fa-solid fa-arrow-up-right-from-square resource-arrow"></i>
+          </a>
+          <a class="resource-card" href="events.html">
+            <span class="resource-icon mint"><i class="fa-regular fa-clock"></i></span>
+            <span class="resource-copy"><strong>Timetable</strong><small>Keep your day on track</small></span>
+            <i class="fa-solid fa-arrow-up-right-from-square resource-arrow"></i>
+          </a>
+          <a class="resource-card" href="campus.html">
+            <span class="resource-icon sky"><i class="fa-solid fa-building-columns"></i></span>
+            <span class="resource-copy"><strong>Campus Information</strong><small>Explore spaces and facilities</small></span>
+            <i class="fa-solid fa-arrow-up-right-from-square resource-arrow"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span>LEARN • CONNECT • NAVIGATE • IMPROVE</span>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/assistant.js"></script>
+  </body>
+</html>

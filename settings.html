@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings | Campus AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a href="index.html" class="brand" aria-label="Campus AI home">
+          <span class="brand-icon">🎓</span>
+          <span class="brand-text">
+            <strong>Campus AI</strong>
+            <small>Your Intelligent College Assistant</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="assistant.html">AI Assistant</a>
+          <a href="predictor.html">ML Predictor</a>
+          <a href="events.html">Events</a>
+          <a href="campus.html">Campus</a>
+          <a href="settings.html" class="active">Settings</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main settings-page">
+      <section class="container settings-shell reveal">
+        <div class="settings-header">
+          <span class="eyebrow accent">Preferences</span>
+          <h1>Customize Campus AI</h1>
+        </div>
+
+        <div class="settings-card">
+          <h2>Appearance</h2>
+          <div class="theme-options">
+            <button class="theme-option active" data-theme="light" type="button">Light Mode</button>
+            <button class="theme-option" data-theme="dark" type="button">Dark Mode</button>
+          </div>
+        </div>
+
+        <div class="settings-card">
+          <h2>Notifications</h2>
+          <label class="switch-row">
+            <span>Enable Notifications</span>
+            <span class="switch">
+              <input id="notificationsToggle" type="checkbox" checked />
+              <span class="slider"></span>
+            </span>
+          </label>
+        </div>
+
+        <div class="settings-card">
+          <h2>Interface</h2>
+          <label class="switch-row">
+            <span>Enable Animations</span>
+            <span class="switch">
+              <input id="animationsToggle" type="checkbox" checked />
+              <span class="slider"></span>
+            </span>
+          </label>
+        </div>
+
+        <div class="settings-card general-card">
+          <h2>General Settings</h2>
+          <ul>
+            <li>Smart campus assistance preferences</li>
+            <li>Event reminders and academic updates</li>
+            <li>Responsive access for desktop and mobile</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span>LEARN • CONNECT • NAVIGATE • IMPROVE</span>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/settings.js"></script>
+  </body>
+</html>
